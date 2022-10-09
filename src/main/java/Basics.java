@@ -43,8 +43,8 @@ public class Basics {
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
          */
-        system.out.println("Hello World!")
-        
+        System.out.println("Hello World!");
+
 
 
 
@@ -64,8 +64,8 @@ public class Basics {
          * TODO (Task 2): Create a variable named my_variable and assign it the
          *                value 100.
          */
-        int my_variable = 100
-         
+        int my_variable = 100;
+
         /* Do not remove the line below: if you did task 2 correctly, then
          * you should see the message "my_variable's value is 100" if you run
          * this file!
@@ -100,12 +100,13 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-        for (int i = 10; i >= 0; i = i -1){
-            system.out.println(" Current count:  " + i)
-
+        for (int i = 10; i >= 0; i = i - 1) {
+            String cur_count = "Current count:";
+            System.out.println(cur_count + i);
+        }
     }
 
-    /**
+        /**
      *  6. Below is a method named split which returns a String,
      *    as indicated by the 'String' part of the header. It takes one
      *    parameter named to_split, whose type is also a String.
@@ -141,17 +142,15 @@ public class Basics {
          *                You may also assume that to_split always has 7 words
          *                separated by spaces, so no loops are required, though
          *                you may use them if you wish.
+
          */
-        StringBuilder ret = new StringBuilder();
-
-        // Fill in the rest of the body here
-        String[] words = to_spilt.split()
-        for (String i:word){
-            ret.append(item.charAt(0))
-        }
-
-        return ret.toString();
-    }
+         StringBuilder ret = new StringBuilder();
+         String[] seperated = to_split.split("");
+         for (String i: seperated){
+             ret.append(i.charAt(0));
+         }
+         return ret.toString();
+     }
 
     /**
      * 7. Below is a method that takes in an integer array (similar to a list
@@ -171,7 +170,7 @@ public class Basics {
         int current_sum = 0;
         for (int i = 0; i < arr.length;i++){
             if (i % 2 == 1){
-            current_sum += arr[i]
+            current_sum += arr[i];
             }
         }
 
@@ -196,3 +195,4 @@ public class Basics {
      *                accordingly.
      */
 }
+
